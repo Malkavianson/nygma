@@ -1,0 +1,10 @@
+{
+	"name": "Teste de extensão",
+	"description": "Acho q to fazendo tudo errado",
+	"version": "1.0",
+	"permissions": ["storage"],
+	"manifest_version": 2,
+	"browser_action": {
+		"default_popup":"index2.html"
+	}
+}

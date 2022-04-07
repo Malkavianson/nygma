@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>eNigma.io</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript" src="init.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+	<div class="j">
+		<div class="h">
+			<div class="dots">
+				<div>
+				<span style="color: #bb1df2">e</span>
+				</div>
+				<div>
+				<span style="font-variant: small-caps;color: #d718ee">N</span>
+				</div>
+				<div>
+				<span style="color: #d718ee">y</span>
+				</div>
+				<div>
+				<span style="font-variant: small-caps;color: #d718ee">g</span>
+				</div>
+				<div>
+				<span style="font-variant: small-caps;color: #d718ee">m</span>
+				</div>
+				<div>
+				<span style="font-variant: small-caps;color: #d718ee">a</span>
+				</div>
+				<div>
+				<span style="color: #bb1df2;font-size: calc(var(--vh, 1vh) * 4)">.</span>
+				</div>
+				<div>
+				<span style="color: #bb1df2;font-size: calc(var(--vh, 1vh) * 4)">i</span>
+				</div>
+				<div>
+				<span style="color: #bb1df2;font-size: calc(var(--vh, 1vh) * 4)">o</span>
+				</div>
+			</div>
+		</div>
+		<div style="background: #111625">
+			<div class="linha" id="dica" style="display: none">
+				<button class="dc" onclick="d()">DICA</button>
+			</div>
+			<div class="linha">
+				<input class="txt" id="palavra" type="text" name="" placeholder="PALAVRA" style="display: none">
+				<input class="snd" type="submit" value=">" id="sender" onclick="dualPlayer()" style="display: none">
+			</div>
+			<div class="linha" id="linha">
+				<button class="dc" id="single" onclick="singlePlayer()">Palavra aleatória</button>
+				<button class="dc" id="dual" onclick="selPalavra()">Jogar em Dupla</button>
+			</div>
+			<div class="linha" id="linha2">
+				<input class ="casa" id="entry" type="text" maxlength="1" name="" placeholder="?" style="display: none;border:solid 3px #7f1e47" onkeyup="this.value = Trim(this.value)">
+				<input class="snd" id="verifier" type="submit" value=">" style="display: none" onclick="resultado()">
+			</div>
+			<div class="linha" id="linha3"></div>
+			<div class="linha" id="linha4">
+				<div id="inf" style="display: none;max-height: calc(var(--vh, 1vh) * 8);max-width: calc(var(--vh, 1vh) * 8)">
+				<input id="tentativas" value="6"></input>
+				</div>
+			</div>
+			<div class="linha" id="linha5">
+				<div class="reload "id="ender" style="display: none" onclick="window.location.reload()">
+						<img style="max-width:100%;max-height:100%" src="https://cdn-icons-png.flaticon.com/128/35/35671.png">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
